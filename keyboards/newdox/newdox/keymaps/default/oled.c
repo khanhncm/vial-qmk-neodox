@@ -28,28 +28,6 @@ static void render_logo(void) {
 
     oled_write_P(qmk_logo, false);
 }
-
-static void print_status_narrow(void) {
-    // Print current mode
-    oled_write_P(PSTR("\n\n"), false);
-
-    switch (get_highest_layer(layer_state)) {
-        case 0:
-            oled_write_ln_P(PSTR("typing"), false);
-            break;
-        case 1:
-            oled_write_ln_P(PSTR("gaming"), false);
-            break;
-        default:
-            oled_write_P(PSTR("fe\n"), false);
-            break;
-    }
-    oled_write_P(PSTR("\n\n"), false);
-    led_t led_usb_state = host_keyboard_led_state();
-    oled_write_ln_P(PSTR("CPSLK"), led_usb_state.caps_lock);
-}
-
-
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
     if (is_keyboard_master()) {
         return OLED_ROTATION_270;
@@ -59,7 +37,7 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 
 bool oled_task_user(void) {
     if (is_keyboard_master()) {
-        print_status_narrow();
+        render_logo();
     } else {
         render_logo();
     }

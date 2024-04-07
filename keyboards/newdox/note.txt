@@ -1,0 +1,5 @@
+qmk setup -H E:/c/vial-qmk-neodox/
+qmk config user.keyboard=newdox/rev1
+qmk config user.keymap=vial
+qmk compile
+qmk info -f json 
