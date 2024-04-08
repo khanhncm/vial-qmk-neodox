@@ -19,13 +19,20 @@
 #include "encoder.c"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-
   [0] = LAYOUT(
-   KC_ESCAPE, KC_1,    KC_2,    KC_3,    KC_4, KC_5,                                          KC_6, KC_7,    KC_8,    KC_9,     KC_0,    KC_DEL,
-   KC_TAB,    KC_Q,    KC_W,    KC_F,    KC_P, KC_B, KC_MINS,                        KC_EQL,  KC_J, KC_L,    KC_U,    KC_Y,     KC_DOT,  KC_BSPC,
-   KC_SPC,    KC_A,    KC_R,    KC_S,    KC_T, KC_G, KC_BSPC,                        KC_SLSH, KC_M, KC_N,    KC_E,    KC_I,     KC_O,    KC_ENT,
-   KC_GRV,    KC_Z,    KC_X,    KC_C,    KC_D, KC_V, KC_WHOM, KC_MYCM,      KC_MSEL, KC_MAIL, KC_K, KC_H,    KC_SCLN, KC_QUOT,  KC_COMM, KC_APP,
-   KC_CAPS,   KC_LCMD, KC_LALT, KC_LCTL, KC_LSFT,    MO(1),   KC_LBRC,      KC_RBRC, MO(1),      KC_RSFT,    KC_RCTL, KC_RALT,  KC_RCMD, TG(2)
+    KC_ESCAPE, KC_1,    KC_2,    KC_3,    KC_4, KC_5,                                          KC_6, KC_7,    KC_8,    KC_9,     KC_0,    KC_DEL,
+    KC_TAB,    KC_Q,    KC_W,    KC_F,    KC_P, KC_B, KC_MINS,                        KC_EQL,  KC_J, KC_L,    KC_U,    KC_Y,     KC_DOT,  KC_BSPC,
+    KC_SPC,    KC_A,    KC_R,    KC_S,    KC_T, KC_G, KC_BSPC,                        KC_SLSH, KC_M, KC_N,    KC_E,    KC_I,     KC_O,    KC_ENT,
+    KC_GRV,    KC_Z,    KC_X,    KC_C,    KC_D, KC_V, KC_WHOM, KC_MYCM,      KC_MSEL, KC_MAIL, KC_K, KC_H,    KC_SCLN, KC_QUOT,  KC_COMM, KC_APP,
+    KC_CAPS,   KC_LCMD, KC_LALT, KC_LCTL, KC_LSFT,    MO(1),   KC_LBRC,      KC_RBRC, MO(1),      KC_RSFT,    KC_RCTL, KC_RALT,  KC_RCMD, TG(2)
+  ),
+
+  [1] = LAYOUT(
+    KC_8,    KC_1,    KC_2,    KC_3,    KC_4, KC_5,                                          KC_6, KC_7,    KC_8,    KC_9,     KC_0,    KC_DEL,
+    KC_7,    KC_LSFT, KC_Q,    KC_LSFT, KC_E, KC_T, KC_N,                        KC_EQL,  KC_J, KC_L,    KC_U,    KC_Y,     KC_DOT,  KC_BSPC,
+    KC_6,    KC_W,    KC_A,    KC_S,    KC_D, KC_F, KC_G,                        KC_SLSH, KC_M, KC_P,    KC_E,    KC_I,     KC_O,    KC_ENT,
+    KC_GRV,  KC_Z,    KC_X,    KC_C,    KC_V, KC_B, KC_LALT, KC_LCTL,      KC_MSEL, KC_MAIL, KC_K, KC_H,    KC_SCLN, KC_QUOT,  KC_COMM, KC_APP,
+    KC_CAPS, KC_Z, KC_9, KC_9, KC_SPC,  KC_9, KC_0,      KC_RBRC, MO(1),      KC_RSFT,    KC_RCTL, KC_RALT,  KC_RCMD, TG(0)
   )
 
 };

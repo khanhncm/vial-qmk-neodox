@@ -24,4 +24,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MASTER_LEFT
 //#define MASTER_RIGHT
 // #define EE_HANDS
+
 #define VIAL_KEYBOARD_UID {0x54, 0xB9, 0x18, 0x3D, 0xE9, 0x29, 0xA8, 0x22}

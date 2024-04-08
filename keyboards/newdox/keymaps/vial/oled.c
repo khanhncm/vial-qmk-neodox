@@ -35,13 +35,13 @@ static void print_status_narrow(void) {
 
     switch (get_highest_layer(layer_state)) {
         case 0:
-            oled_write_ln_P(PSTR("typing"), false);
+            oled_write_ln_P(PSTR("typ"), false);
             break;
         case 1:
-            oled_write_ln_P(PSTR("gaming"), false);
+            oled_write_ln_P(PSTR("gam"), false);
             break;
         default:
-            oled_write_P(PSTR("fe\n"), false);
+            oled_write_P(PSTR("fn\n"), false);
             break;
     }
     oled_write_P(PSTR("\n\n"), false);
