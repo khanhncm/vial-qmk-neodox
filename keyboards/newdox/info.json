@@ -5,9 +5,6 @@
     "board": "GENERIC_RP_RP2040",
     "bootloader": "rp2040",
     "processor": "RP2040",
-    "bootmagic": {
-        "enabled": true
-    },
     "debounce": 5,
     "diode_direction": "COL2ROW",
     "features": {
@@ -20,10 +17,6 @@
         "cols": ["GP7", "GP10", "GP13", "GP16", "GP5", "GP3", "GP1"],
         "rows": ["GP2", "GP4", "GP6", "GP17", "GP18"]
     },
-    "rgblight": {
-        "led_count": 24,
-        "split_count": [12, 12]
-    },
     "split": {
         "enabled": true,
         "transport": {
@@ -35,13 +28,7 @@
         "vid": "0x4D44",
         "pid": "0x5244",
         "force_nkro": true,
-        "polling_interval": 1
-    },
-    "layouts": {
-        "LAYOUT_dummy": {
-            "layout": [
-                {"label": "k31", "matrix": [2, 3], "x": 0, "y": 0}
-            ]
-        }
+        "polling_interval": 2
     }
+    
 }

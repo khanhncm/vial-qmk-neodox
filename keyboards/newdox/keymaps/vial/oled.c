@@ -30,25 +30,20 @@ static void render_logo(void) {
 }
 
 static void print_status_narrow(void) {
-    // Print current mode
-    oled_write_P(PSTR("\n\n"), false);
-
+    led_t led_usb_state = host_keyboard_led_state();
+    oled_write_P(PSTR("CPSLK\n"), led_usb_state.caps_lock);
     switch (get_highest_layer(layer_state)) {
         case 0:
-            oled_write_ln_P(PSTR("typ"), false);
+            oled_write_P(PSTR("typ\n"), false);
             break;
         case 1:
-            oled_write_ln_P(PSTR("gam"), false);
+            oled_write_P(PSTR("gam\n"), false);
             break;
         default:
             oled_write_P(PSTR("fn\n"), false);
             break;
     }
-    oled_write_P(PSTR("\n\n"), false);
-    led_t led_usb_state = host_keyboard_led_state();
-    oled_write_ln_P(PSTR("CPSLK"), led_usb_state.caps_lock);
 }
-
 
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
     if (is_keyboard_master()) {
