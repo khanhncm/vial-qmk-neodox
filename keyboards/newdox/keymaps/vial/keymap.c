@@ -28,18 +28,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [1] = LAYOUT(
-    KC_8,    KC_1,    KC_2, KC_3,    KC_4, KC_5,                                          KC_6, KC_7,    KC_8,    KC_9,     KC_0,    KC_DEL,
-    KC_7,    KC_LSFT, KC_Q, KC_LSFT, KC_E, KC_T, KC_N,                        KC_EQL,  KC_J, KC_L,    KC_U,    KC_Y,     KC_DOT,  KC_BSPC,
-    KC_6,    KC_W,    KC_A, KC_S,    KC_D, KC_F, KC_G,                        KC_SLSH, KC_M, KC_P,    KC_E,    KC_I,     KC_O,    KC_ENT,
-    KC_GRV,  KC_Z,    KC_X, KC_C,    KC_V, KC_B, KC_LALT, KC_LCTL,      KC_MSEL, KC_MAIL, KC_K, KC_H,    KC_SCLN, KC_QUOT,  KC_COMM, KC_APP,
-    KC_CAPS, KC_ESC,  KC_INS, KC_R, KC_SPC,  KC_9, KC_0,                KC_RBRC, KC_LCTL,   MO(2), KC_LALT, KC_LSFT, KC_LCMD,TO(0)
+    KC_8,   KC_1,    KC_2, KC_3,    KC_4, KC_5,                                          KC_6, KC_7,    KC_8,    KC_9,     KC_0,    KC_DEL,
+    KC_7,   KC_LSFT, KC_Q, KC_LSFT, KC_E, KC_T, KC_N,                        KC_EQL,  KC_J, KC_BTN1,    KC_WH_D,    KC_BTN2,     KC_WH_U,  KC_BSPC,
+    KC_6,   KC_W,    KC_A, KC_S,    KC_D, KC_F, KC_G,                        KC_SLSH, KC_M, KC_MS_R,    KC_MS_D,    KC_MS_L,     KC_MS_U,    KC_ENT,
+    KC_ESC, KC_Z,    KC_X, KC_C,    KC_V, KC_B, KC_LALT, KC_LCTL,      KC_MSEL, KC_MAIL, KC_K, KC_H,    KC_SCLN, KC_QUOT,  KC_COMM, KC_APP,
+    KC_INS, KC_DEL,  KC_END, KC_R, KC_SPC,  KC_9, KC_0,                KC_RBRC, KC_BTN2,   KC_BTN1, KC_LALT, KC_LSFT, KC_LCMD,TO(0)
   ),
 
   [2] = LAYOUT(
-    KC_ESC, KC_F1,    KC_F2,    KC_F3,    KC_F4, KC_F5,                                          KC_F6, KC_F7,    KC_F8,    KC_F9,     KC_F10,    KC_DEL,
-    KC_TAB, KC_NO, KC_VOLD,  KC_MUTE, KC_VOLU, KC_B, KC_F11,                        KC_F12,  KC_J, KC_PGDN,    KC_END,    KC_PGUP,     KC_HOME,  KC_BSPC,
-    KC_SPC, KC_MSEL, KC_MPRV, KC_MPLY, KC_MNXT, KC_G, KC_BSPC,                        KC_SLSH, KC_M, KC_RIGHT,  KC_DOWN,    KC_LEFT,     KC_UP,    KC_ENT,
-    KC_GRV, KC_CPNL,    KC_MAIL,    KC_MYCM, KC_WHOM, KC_V, KC_NO, QK_BOOT,      KC_MSEL, KC_MAIL, KC_K, KC_H,  KC_SCLN, KC_QUOT,  KC_COMM, KC_APP,
+    KC_ESC,  KC_F1,   KC_F2,   KC_F3,   KC_F4, KC_F5,                                          KC_F6, KC_F7,    KC_F8,    KC_F9,     KC_F10,    KC_DEL,
+    KC_TAB,  KC_WH_U, KC_BTN2, KC_WH_D, KC_BTN1, KC_BSPC, KC_F11,                        KC_F12,  KC_J, KC_PGDN,    KC_END,    KC_PGUP,     KC_HOME,  KC_BSPC,
+    KC_SPC,  KC_MS_U, KC_MS_L, KC_MS_D, KC_MS_R, KC_ENT, KC_BSPC,                        KC_SLSH, KC_M, KC_RIGHT,  KC_DOWN,    KC_LEFT,     KC_UP,    KC_ENT,
+    KC_GRV,  KC_UP, KC_LEFT, KC_DOWN, KC_RIGHT, KC_V, KC_NO, QK_BOOT,      KC_MSEL, KC_MAIL, KC_K,KC_VOLU,  KC_MUTE, KC_VOLD,KC_NO, KC_APP,
     KC_CAPS, KC_LCMD, KC_LSFT, KC_LALT, KC_NO,    KC_LCTL,   KC_LBRC,            KC_RBRC, KC_LCTL,       KC_NO, KC_LALT, KC_LSFT, KC_LCMD,   KC_NO
   ),
 

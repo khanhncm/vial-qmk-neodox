@@ -17,6 +17,9 @@
         "cols": ["GP7", "GP10", "GP13", "GP16", "GP5", "GP3", "GP1"],
         "rows": ["GP2", "GP4", "GP6", "GP17", "GP18"]
     },
+    "mouse_key": {
+        "enabled": true
+    },
     "split": {
         "enabled": true,
         "transport": {
