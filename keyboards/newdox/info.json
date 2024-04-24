@@ -18,7 +18,10 @@
         "rows": ["GP2", "GP4", "GP6", "GP17", "GP18"]
     },
     "mouse_key": {
-        "enabled": true
+        "enabled": true,
+        "interval": 4,
+        "delay": 1,
+        "wheel_delay": 1
     },
     "split": {
         "enabled": true,
