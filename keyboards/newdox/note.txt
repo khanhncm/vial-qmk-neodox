@@ -1,4 +1,4 @@
-qmk setup -H E:/c/vial-qmk-neodox/
+qmk setup -H C:/c/vial-qmk-neodox/
 qmk config user.keyboard=newdox/rev1
 qmk config user.keymap=vial
 qmk compile
