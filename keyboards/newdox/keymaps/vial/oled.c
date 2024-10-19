@@ -36,8 +36,11 @@ static void print_status_narrow(void) {
         case 0:
             oled_write_P(PSTR("typ\n"), false);
             break;
-        case 1:
-            oled_write_P(PSTR("gam\n"), false);
+        case 2:
+            oled_write_P(PSTR("sb\n"), false);
+            break;
+        case 4:
+            oled_write_P(PSTR("c9\n"), false);
             break;
         default:
             oled_write_P(PSTR("fn\n"), false);
