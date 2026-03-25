@@ -1,7 +1,10 @@
+git bash
+git clone https://github.com/khanhncm/vial-qmk-neodox.git
+
+qmk sys
 qmk setup -H C:/c/vial-qmk-neodox/
 qmk setup -H E:/app/qmk/vial-qmk-neodox/
-qmk setup khanhncm/vial-qmk-neodox -H E:/app/qmk/vial-qmk-neodox/
- 
+
 qmk config user.keyboard=newdox/rev1
 qmk config user.keymap=vial
 qmk compile
