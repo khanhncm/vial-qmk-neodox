@@ -1,6 +1,8 @@
 git bash
 git clone https://github.com/khanhncm/vial-qmk-neodox.git
 
+use github to update my fork to matck the original vial qmk
+
 qmk sys
 qmk setup -H C:/c/vial-qmk-neodox/
 qmk setup -H E:/app/qmk/vial-qmk-neodox/
