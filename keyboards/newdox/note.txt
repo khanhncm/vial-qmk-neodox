@@ -6,6 +6,7 @@ use github to update my fork to matck the original vial qmk
 qmk sys
 qmk setup -H C:/c/vial-qmk-neodox/
 qmk setup -H E:/app/qmk/vial-qmk-neodox/
+git submodule update
 
 qmk config user.keyboard=newdox/rev1
 qmk config user.keymap=vial
@@ -13,3 +14,4 @@ qmk compile
 qmk info -f json 
 qmk flash -kb newdox/rev1 -km vial
 qmk flash 
+
