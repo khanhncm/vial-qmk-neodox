@@ -11,3 +11,5 @@ qmk config user.keyboard=newdox/rev1
 qmk config user.keymap=vial
 qmk compile
 qmk info -f json 
+qmk flash -kb newdox/rev1 -km vial
+qmk flash 
