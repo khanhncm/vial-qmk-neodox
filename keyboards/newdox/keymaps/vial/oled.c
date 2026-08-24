@@ -32,6 +32,8 @@ static void render_logo(void) {
 static void print_status_narrow(void) {
     led_t led_usb_state = host_keyboard_led_state();
     oled_write_P(PSTR("CPSLK\n"), led_usb_state.caps_lock);
+    oled_write_P(PSTR("NUMLK\n"), led_usb_state.num_lock);
+    
     switch (get_highest_layer(layer_state)) {
         case 0:
             oled_write_P(PSTR("typ\n"), false);
