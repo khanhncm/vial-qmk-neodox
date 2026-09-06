@@ -19,9 +19,11 @@
     },
     "mouse_key": {
         "enabled": true,
-        "interval": 4,
-        "delay": 1,
-        "wheel_delay": 1
+        "interval": 2,
+        "delay": 0,
+        "wheel_delay": 0,
+        "time_to_max": 0,
+        "max_speed": 10
     },
     "split": {
         "enabled": true,
